@@ -1,0 +1,11 @@
+{% extends 'base.html' %} {% block title %}Story Form{% endblock %} {% block
+content %}
+<form action="/story">
+  {% for val in curr_story%}
+  <label for="val"> {{val}}</label>
+  <input type="text" name="{{val}}" id="" />
+  <p></p>
+  {% endfor %}
+  <button type="submit">Submit!</button>
+</form>
+{% endblock %}
